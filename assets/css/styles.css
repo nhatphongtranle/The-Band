@@ -1,0 +1,556 @@
+/* reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-family: "lato", sans-serif;
+}
+
+/* Common */
+.clear {
+    clear: both;
+}
+
+/* Main */
+.header-menu {
+    height: 46px;
+    background-color: rgb(0, 0, 0);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+
+.navbar {
+    display: inline-block;
+}
+
+.navbar li {
+    display: inline-block;
+    position: relative;
+}
+
+.navbar>li:hover>a,
+.navbar .subnav li:hover {
+    color: #000;
+    background-color: #ccc;
+    display: block;
+}
+
+.navbar li:hover .subnav {
+    display: block;
+}
+
+.navbar li a {
+    color: #fff;
+    text-decoration: none;
+    line-height: 46px;
+    padding: 0 24px;
+    display: block;
+}
+
+.navbar .subnav {
+    position: absolute;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    display: none;
+    top: 100%;
+    min-width: 150px;
+}
+
+.navbar .subnav a {
+    color: #000;
+    padding: 0 16px;
+    line-height: 38px;
+}
+
+.navbar .navbar-button {
+    font-size: 14px;
+}
+
+.header-menu .Search-btn {
+    float: right;
+    padding: 0 16px;
+}
+
+.header-menu .Search-btn:hover {
+    background-color: #f44336 !important;
+    cursor: pointer;
+}
+
+.header-menu .mobile-menu-btn {
+    display: none;
+}
+
+.header-menu .mobile-menu-btn:hover {
+    color: #000;
+    background-color: #ccc;
+}
+
+.header-menu .menu-icon:hover {
+    color: #000;
+}
+
+.header-menu .menu-icon,
+.header-menu .Search-icon {
+    color: #fff;
+    font-size: 25 px;
+    line-height: 46px;
+}
+
+/* slider */
+.slider {
+    margin-top: 46px;
+    padding-top: 50%;
+    position: relative;
+    background: url('../img/chicago.jpg');
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
+}
+
+.slider .text-content {
+    position: absolute;
+    bottom: 48px;
+    color: #fff;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+
+.slider .text-content h2 {
+    font-weight: 400;
+    display: block;
+    margin: 10px 0;
+}
+
+.slider .text-content b {
+    font-size: 15px;
+    margin-top: 25px;
+}
+
+.container {
+    /*height: 2000px;*/
+    background: #fff;
+}
+
+.container .content-section {
+    max-width: 800px;
+    padding: 64px 16px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.container .content-section-heading {
+    font-weight: 400;
+    margin: 10px 0;
+    font-size: 30px;
+    text-align: center;
+    letter-spacing: 4px;
+}
+
+.container .section-sub {
+    font-size: 15px;
+    text-align: center;
+    margin: 15px 0;
+    font-style: italic;
+    opacity: 0.6;
+}
+
+.container .about {
+    text-align: justify;
+    font-size: 15px;
+    line-height: 1.5;
+    margin: 15px 0;
+}
+
+.container .member-list {
+    padding: 32px 0 32px;
+    overflow: hidden;
+}
+
+.container .member-name {
+    text-align: center;
+    font-size: 15px;
+    margin: 15px 0px;
+}
+
+.container .member-item {
+    float: left;
+    text-align: center;
+    width: 33.33333%;
+}
+
+.container .member-img {
+    width: 154px;
+    border-radius: 4px;
+}
+
+/* Tour section */
+.tour-section {
+    background-color: #000;
+}
+
+.content-tour-section {
+    padding: 64px 16px;
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+.section-heading {
+    color: #fff;
+    line-height: 1.5;
+    font-size: 30px;
+    font-weight: 400;
+    text-align: center;
+    display: block;
+    margin: 10px 0;
+}
+
+.section-sub-heading {
+    color: #fff;
+    line-height: 1.5;
+    font-size: 15px;
+    font-style: italic;
+    text-align: center;
+    display: block;
+    margin: 15px 0;
+}
+
+/* Tickets-list */
+.tickets-list {
+    background-color: #fff;
+    margin-top: 40px;
+    list-style-type: none;
+}
+
+.tickets-list li {
+    padding: 8px 16px;
+    border-bottom: 1px solid #ddd;
+    display: list-item;
+    font-size: 15px;
+    line-height: 1.5;
+    color: #757575;
+}
+
+.tickets-list .Sold-out {
+    color: #fff !important;
+    background-color: #f44336 !important;
+    margin-left: 16px !important;
+    display: inline-block;
+    padding: 0 8px;
+    text-align: center;
+}
+
+.tickets-list .Quantity {
+    background-color: #000;
+    color: #fff;
+    padding: 0 8px;
+    text-align: center;
+    float: right !important;
+    margin-right: 16px !important;
+    border-radius: 50%;
+}
+
+/* place-tour */
+.place-list {
+    padding: 32px 8px;
+    margin: 0 -16px;
+}
+
+.place-item {
+    float: left;
+    width: 33.3333%;
+    padding: 0 8px;
+}
+
+.place-img {
+    width: 100%;
+    display: block;
+}
+
+.place-img:hover {
+    opacity: 0.6;
+}
+
+.place-content {
+    background-color: #fff !important;
+    padding: 16px;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+.place-content p {
+    color: #000 !important;
+    margin: 15px 0;
+    font-size: 15px;
+}
+
+.time {
+    opacity: 0.6;
+}
+
+.place-btn {
+    color: #fff;
+    background-color: #000;
+    text-decoration: none;
+    padding: 8px 16px;
+    border: none;
+    margin-bottom: 16px;
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+    overflow: hidden;
+}
+
+.place-btn:hover {
+    color: #000;
+    background-color: #ccc;
+    cursor: pointer;
+}
+
+/* Modal */
+.ticketModal.open {
+    display: flex;
+}
+
+.ticketModal {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+    background: #fff;
+    width: 700px;
+    min-height: 450px;
+    position: relative;
+    max-width: calc(100%-32px);
+    /*transform: translateY(-140px);
+    transition: modalFaceIn .3s ease ;*/
+}
+
+.modal-header {
+    background-color: #009688 !important;
+    color: #fff !important;
+    height: 129px;
+    padding: 32px 16px;
+    text-align: center !important;
+}
+
+.modal-header .btn-close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+    padding: 8px 16px;
+    vertical-align: middle;
+    text-align: center;
+    font-size: 24px !important;
+}
+
+.btn-close:hover {
+    opacity: 0.8;
+}
+
+.modal-header h2 {
+    letter-spacing: 4px;
+    font-size: 30px;
+    font-weight: 400;
+    margin: 10px 0;
+}
+
+.modal-header i {
+    display: inline-block;
+    font-size: inherit;
+    margin-right: 16px;
+}
+
+.modal-container {
+    padding: 0.01em 16px;
+}
+
+.modal-container p {
+    margin: 15px 0;
+    display: block;
+}
+
+.modal-container .fa,
+.modal-container .fa-solid {
+    display: inline-block;
+    font-size: inherit;
+    padding-right: 12px;
+}
+
+.modal-container .modal-input {
+    padding: 8px;
+    display: block;
+    width: 100%;
+    border: 1px solid #ccc !important;
+    font-size: 15px;
+}
+
+.modal-container .button-pay {
+    color: #fff;
+    background-color: #009688;
+    float: right !important;
+    display: block;
+    width: 100%;
+    padding: 16px 0;
+    margin: 16px 0;
+    border: none;
+    cursor: pointer;
+}
+
+.button-pay:hover {
+    background-color: #757575;
+}
+
+.text {
+    float: right !important;
+    font-size: 15px;
+    line-height: 1.5;
+    margin: 15px 0;
+}
+
+.text-blue {
+    color: #2196F3 !important;
+    background-color: transparent;
+}
+
+/*
+@keyframes modalFaceIn {
+    from {
+        transform: translateY(-140px);
+    }
+    to {
+        transform: translateY(0);
+    }
+}*/
+
+/* Contact */
+.contact {
+    padding: 64px 16px;
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+.contact .section-heading {
+    color: #000 !important;
+    letter-spacing: 4px;
+}
+
+.contact .section-sub-heading {
+    color: #757575;
+    font-style: italic;
+}
+
+.contact-info {
+    font-size: 18px !important;
+    float: left;
+    width: 50%;
+    margin-bottom: 16px !important;
+    line-height: 1.5;
+}
+
+.contact-form {
+    float: left;
+    width: 50%;
+}
+
+.contact-content {
+    padding: 32px 0;
+}
+
+.contact-info i {
+    width: 30px;
+    font-size: inherit;
+    display: inline-block;
+}
+
+form {
+    display: block;
+    margin-top: 0em;
+}
+
+.contact-form .form-body {
+    margin: 0 -16px 8px -16px;
+    padding: 0 8px;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+.contact-name,
+.contact-email,
+.contact-message {
+    width: 50%;
+    float: left;
+    padding: 8px;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+.form-control {
+    border: 1px solid #ccc !important;
+    padding: 8px;
+    display: block;
+    width: 100%;
+}
+
+.button-black {
+    float: right !important;
+    margin: 16px 0;
+    border: none;
+    padding: 8px 16px;
+    text-align: center;
+    cursor: pointer;
+    text-decoration: none;
+    background-color: #000;
+    color: #fff;
+}
+
+.button-black:hover {
+    background-color: #ccc !important;
+    color: #000 !important;
+}
+
+.image {
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+    border-style: none;
+}
+
+/* footer */
+.social-list {
+    padding: 64px 16px !important;
+    text-align: center;
+    font-size: 24px !important;
+}
+
+.social-list i:hover {
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.social-list p {
+    font-size: 15px !important;
+    line-height: 1.5;
+    margin: 15px 0;
+}
+
+.social-list a {
+    color: inherit;
+    background-color: transparent;
+    text-decoration: none;
+}
