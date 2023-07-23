@@ -36,9 +36,9 @@ var menuItems = document.querySelectorAll('.navbar li a[href*="#"]');
 for (var i = 0; i < menuItems.length; i++) {
   var menuItem = menuItems[i];
   menuItem.onclick = function (event) {
-     var isParentMenu =
-       this.nextElementSibling &&
-       this.nextElementSibling.classList.contains("subnav");
+    var isParentMenu =
+      this.nextElementSibling &&
+      this.nextElementSibling.classList.contains("subnav");
     if (isParentMenu) {
       event.preventDefault();
     } else {
@@ -46,3 +46,17 @@ for (var i = 0; i < menuItems.length; i++) {
     }
   };
 }
+
+// settings owl-carousel
+var carousel = document.getElementById("#hero-carousel");
+$(document).ready(function () {
+  $("#hero-carousel").owlCarousel({
+    items: 1,
+    dots: false,
+    loop: true,
+    nav: true,
+    //navText: navText,
+    autoplay: true,
+    autoplayHoverPause: true,
+  });
+});
